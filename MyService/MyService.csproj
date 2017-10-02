@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FFAE633-1D89-45E8-BB16-CF7C8D6C63F5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyService</RootNamespace>
+    <AssemblyName>MyService</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXSSLibrary">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Crm.Outlook.Sdk">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Crm.Outlook.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Crm.Tools.EmailProviders">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Crm.Tools.EmailProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Xrm.Client">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Client.CodeGeneration">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Client.CodeGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Portal">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Portal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Portal.Files">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Portal.Files.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk.Deployment">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Sdk.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk.Workflow">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Sdk.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Tooling.Connector">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Tooling.Connector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Tooling.CrmConnectControl">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Tooling.CrmConnectControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Tooling.CrmConnector.Powershell">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Tooling.CrmConnector.Powershell.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Tooling.PackageDeployment.Powershell">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Tooling.PackageDeployment.Powershell.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Tooling.Ui.Styles">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Tooling.Ui.Styles.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Tooling.WebResourceUtility">
+      <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Tooling.WebResourceUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EmployeeService.svc" />
+    <Content Include="Service1.svc" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmployeeService.svc.cs">
+      <DependentUpon>EmployeeService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IEmployeeService.cs" />
+    <Compile Include="ObjectConverter.cs" />
+    <Compile Include="OrganizationService.cs" />
+    <Compile Include="ProxyEmployee.cs" />
+    <Compile Include="Service1.svc.cs">
+      <DependentUpon>Service1.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IService1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63250</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63250/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
