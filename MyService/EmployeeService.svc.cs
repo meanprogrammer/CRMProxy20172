@@ -18,7 +18,7 @@ namespace MyService
 
         public EmployeeService()
         {
-            context = new OrgContext();
+            context = new OrgContext("MyService");
         }
 
         public List<ProxyEmployee> Employees()
