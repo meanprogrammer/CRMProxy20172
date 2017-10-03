@@ -133,8 +133,6 @@
     <Content Include="Assemblies\Microsoft.Crm.Outlook.Sdk.dll" />
     <Content Include="Assemblies\Microsoft.Crm.Sdk.Proxy.dll" />
     <Content Include="Assemblies\Microsoft.Crm.Tools.EmailProviders.dll" />
-    <Content Include="Assemblies\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
-    <Content Include="Assemblies\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
     <Content Include="Assemblies\Microsoft.Xrm.Client.CodeGeneration.dll" />
     <Content Include="Assemblies\Microsoft.Xrm.Client.dll" />
     <Content Include="Assemblies\Microsoft.Xrm.Portal.dll" />
