@@ -53,6 +53,14 @@
       <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Crm.Tools.EmailProviders.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=2.18.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms, Version=2.18.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Xrm.Client">
       <HintPath>..\..\..\..\..\Source\Repos\DynamicsCRMProxy\DynamicsCRMProxy.Solution\CRMProxyService\Assemblies\Microsoft.Xrm.Client.dll</HintPath>
     </Reference>
@@ -117,6 +125,8 @@
     <Content Include="Assemblies\Microsoft.Crm.Outlook.Sdk.dll" />
     <Content Include="Assemblies\Microsoft.Crm.Sdk.Proxy.dll" />
     <Content Include="Assemblies\Microsoft.Crm.Tools.EmailProviders.dll" />
+    <Content Include="Assemblies\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="Assemblies\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
     <Content Include="Assemblies\Microsoft.Xrm.Client.CodeGeneration.dll" />
     <Content Include="Assemblies\Microsoft.Xrm.Client.dll" />
     <Content Include="Assemblies\Microsoft.Xrm.Portal.dll" />

@@ -12,7 +12,7 @@ namespace MyService
     public interface IEmployeeService
     {
         [OperationContract]
-        IEnumerable<ProxyEmployee> Employees();
+        List<ProxyEmployee> Employees();
 
         [OperationContract]
         ProxyEmployee GetOneEmployee(Guid id);

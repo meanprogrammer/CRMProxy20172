@@ -7,7 +7,7 @@ namespace MyService
 {
     public static class ObjectConverter
     {
-        public static IEnumerable<ProxyEmployee> ConvertToProxyEmployee(IEnumerable<new_employee> emps, OrgContext context)
+        public static List<ProxyEmployee> ConvertToProxyEmployee(List<new_employee> emps, OrgContext context)
         {
             List<ProxyEmployee> list = new List<ProxyEmployee>();
             foreach (var emp in emps)
