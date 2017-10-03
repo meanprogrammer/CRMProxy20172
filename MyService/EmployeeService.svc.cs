@@ -25,8 +25,8 @@ namespace MyService
         {
             try
             {
-                return new List<ProxyEmployee>();
-                //return ObjectConverter.ConvertToProxyEmployee(context.new_employeeSet.ToList(), context);
+                //return new List<ProxyEmployee>();
+                return ObjectConverter.ConvertToProxyEmployee(context.new_employeeSet.ToList(), context);
             }
             catch (Exception)
             {
