@@ -27,7 +27,7 @@ namespace MyService
             {
                 return ObjectConverter.ConvertToProxyEmployee(context.new_employeeSet.ToList(), context);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
