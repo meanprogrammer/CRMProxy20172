@@ -134,14 +134,11 @@
     <Content Include="bin\coretools\Other Redistributable.txt" />
     <Content Include="bin\coretools\SolutionPackager.exe" />
     <Content Include="bin\Microsoft.Crm.Outlook.Sdk.dll" />
-    <Content Include="bin\Microsoft.Crm.Sdk.Proxy.dll" />
     <Content Include="bin\Microsoft.Crm.Tools.EmailProviders.dll" />
     <Content Include="bin\Microsoft.Xrm.Client.CodeGeneration.dll" />
     <Content Include="bin\Microsoft.Xrm.Client.dll" />
     <Content Include="bin\Microsoft.Xrm.Portal.dll" />
     <Content Include="bin\Microsoft.Xrm.Portal.Files.dll" />
-    <Content Include="bin\Microsoft.Xrm.Sdk.Deployment.dll" />
-    <Content Include="bin\Microsoft.Xrm.Sdk.dll" />
     <Content Include="bin\Microsoft.Xrm.Sdk.Workflow.dll" />
     <Content Include="bin\Microsoft.Xrm.Tooling.Connector.dll" />
     <Content Include="bin\Microsoft.Xrm.Tooling.CrmConnectControl.dll" />
@@ -149,8 +146,6 @@
     <Content Include="bin\Microsoft.Xrm.Tooling.PackageDeployment.Powershell.dll" />
     <Content Include="bin\Microsoft.Xrm.Tooling.Ui.Styles.dll" />
     <Content Include="bin\Microsoft.Xrm.Tooling.WebResourceUtility.dll" />
-    <Content Include="bin\MyService.dll" />
-    <Content Include="bin\MyService.pdb" />
     <Content Include="EmployeeService.svc" />
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
@@ -174,7 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="bin\MyService.dll.config" />
     <Content Include="bin\coretools\LicenseTerms.docx" />
     <Content Include="bin\coretools\CrmSvcUtil.exe.config" />
     <None Include="Web.Debug.config">
