@@ -84,6 +84,7 @@
     </Reference>
     <Reference Include="Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.8.2.0.2\lib\net452\Microsoft.Xrm.Sdk.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Xrm.Sdk.Deployment, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -134,11 +135,19 @@
     <Content Include="bin\coretools\Other Redistributable.txt" />
     <Content Include="bin\coretools\SolutionPackager.exe" />
     <Content Include="bin\Microsoft.Crm.Outlook.Sdk.dll" />
+    <Content Include="bin\Microsoft.Crm.Sdk.Proxy.dll" />
     <Content Include="bin\Microsoft.Crm.Tools.EmailProviders.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml" />
+    <Content Include="bin\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.dll" />
     <Content Include="bin\Microsoft.Xrm.Client.CodeGeneration.dll" />
     <Content Include="bin\Microsoft.Xrm.Client.dll" />
     <Content Include="bin\Microsoft.Xrm.Portal.dll" />
     <Content Include="bin\Microsoft.Xrm.Portal.Files.dll" />
+    <Content Include="bin\Microsoft.Xrm.Sdk.Deployment.dll" />
+    <Content Include="bin\Microsoft.Xrm.Sdk.dll" />
     <Content Include="bin\Microsoft.Xrm.Sdk.Workflow.dll" />
     <Content Include="bin\Microsoft.Xrm.Tooling.Connector.dll" />
     <Content Include="bin\Microsoft.Xrm.Tooling.CrmConnectControl.dll" />
